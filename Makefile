@@ -2,7 +2,7 @@
 	
 BIN=./bin/
 TARGET = $(BIN)gull
-WIN_TARGET = $(BIN)gull.exe
+WIN_TARGET = $(BIN)Samir.exe
 
 BMI_FLAGS := -mbmi -mbmi2 -DHNI
 
@@ -11,7 +11,7 @@ win32:
 	@strip $(WIN_TARGET)
 
 win64:
-	x86_64-w64-mingw32-c++-posix -O3 -g0 -std=c++11 -fno-rtti -static -fno-exceptions -msse3 gull.cpp -o $(WIN_TARGET)
+	x86_64-w64-mingw32-c++-posix -O3 -g0 -std=c++11 -fno-rtti -static -fno-exceptions -msse3 Samir.cpp -o $(WIN_TARGET)
 	@strip $(WIN_TARGET)
 	
 win64-prof:	
